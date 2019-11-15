@@ -1,0 +1,7 @@
+.idea
+node_red_example_dockerized.iml
+node_modules
+npm-debug.log
+!node_red_data
+node_red_data/*
+!node_red_data/flows.json

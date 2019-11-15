@@ -1,0 +1,31 @@
+{
+  "name": "node_red_example_dockerized",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./app/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prod": "babel-node ./app/server.js",
+    "dev": "nodemon -L --inspect=0.0.0.0:9229 --exec babel-node ./"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "r2": "^2.0.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "express-react-views": "^0.11.0",
+    "react-number-format": "^4.3.1",
+    "mongodb": "^3.3.3",
+    "puppeteer": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "@babel/node": "^7.7.0"
+  },
+  "keywords": [],
+  "author": "yuradoc <yuradoc.commercial@gmail.com>",
+  "license": "MIT"
+}

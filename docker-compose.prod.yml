@@ -1,0 +1,22 @@
+version: '3.7'
+services:
+  web:
+    build:
+      context: .
+      args:
+        build_mode: prod
+    ports:
+      - "8080:8080"
+    volumes:
+      - "./app:/usr/src/app/app"
+    command: npm run prod
+  node-red:
+    image: nodered/node-red:latest
+    ports:
+      - "1880:1880"
+    volumes:
+      - "./node_red_data:/data"
+  db:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
