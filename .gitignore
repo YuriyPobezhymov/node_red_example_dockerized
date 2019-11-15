@@ -2,6 +2,7 @@
 node_red_example_dockerized.iml
 node_modules
 npm-debug.log
+package-lock.json
 !node_red_data
 node_red_data/*
 !node_red_data/flows.json
